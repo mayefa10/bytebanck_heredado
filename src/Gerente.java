@@ -1,18 +1,24 @@
 
-public class Gerente extends Funcionario{
-	private String clave;
-	
-	public void setClave(String clave) {
-		this.clave = clave;
-		
-	}
-	public boolean iniciarSesion(String clave) {
-		return clave == "AluraCurosOnline";
-		
-	}
+public class Gerente extends Funcionario implements Autenticable{
+
 	public double getBonificacion () {
 		System.out.println("Ejecutando desde gerente ");
-		return super.getSalario()+
-				super.getBonificacion();
+		return 9000;
+		//return super.getSalario()+
+			//	this.getSalario()*0.05;
+	}
+
+	
+
+	@Override
+	public void setClave(String clave) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean iniciarSesion(String clave) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

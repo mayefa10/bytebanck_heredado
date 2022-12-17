@@ -12,6 +12,8 @@ public class TestReferencias {
 	gerente.setSalario(7000000); 
 	
 	//funcionario.iniciarSesion();
+	
+	gerente.iniciarSesion("_ddddd");
 }
 	
 
